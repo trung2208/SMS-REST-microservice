@@ -1,5 +1,5 @@
 {
-    "name": "RND_JS_SERIAL",
+    "name": "SMS-REST-microservice",
     "version": "1.0.0",
     "private": true,
     "main": "main.js",
@@ -13,7 +13,7 @@
         "client",
         "browser"
     ],
-    "author": "trung",
+    "author": "trung2208",
     "contributors": [],
     "dependencies": {
         "bcryptjs": "^2.4.3",
