@@ -9,7 +9,7 @@ var express = require("express"),
   port = process.env.PORT || 3000;
 var server = require("http").createServer(app);
 var io = require("socket.io")(server);
-var colors = require("colors");
+// var colors = require("colors");
 bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
