@@ -32,7 +32,7 @@ app.use(
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function (socket) {
-        console.log('New client connect'.gray);
+        console.log('New client connect');
     
         socket.on('led-change', function(data) {
             console.log(data);
@@ -40,9 +40,10 @@ io.on('connection', function (socket) {
             io.sockets.emit('led-change', data);
         });
         socket.on('disconnect', function () {
-            console.log('Client disconnect'.gray);
+            console.log('Client disconnect');
         });
     });
-app.listen(port);
+    server.listen(port, function () {
+        console.log('Server listening at port %d', port);
+    });
 
-console.log("todo list RESTful API server started on: " + port);
