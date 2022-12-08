@@ -17,7 +17,7 @@
     "contributors": [],
     "dependencies": {
         "bcryptjs": "^2.4.3",
-        "express": "^4.16.3",
+        "express": "^4.17.3",
         "jsonwebtoken": "^8.3.0",
         "mongoose": "^5.4.1",
         "redis": "^2.8.0",
